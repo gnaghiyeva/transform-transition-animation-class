@@ -1,0 +1,50 @@
+.wrapper{
+    width: 700px;
+    margin: 40px auto;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+  }
+
+  .wrapper [class|="box"]{
+    width: 100px;
+    height: 100px;
+}
+
+.box-1{
+    background-color: hotpink;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 1s;
+    animation-name: movement;
+    animation-duration: .3s;
+    /* transform: scale(2); */
+}
+@keyframes movement{
+    0%{
+       left: 0%;
+       top: 0%;
+    }
+
+    25%{
+        left: calc(100%-100px);
+        top: 0%;
+    }
+
+    50%{
+        top: calc(100%-100px);
+        left: calc(100%-100px);
+    }
+
+    75%{
+        left: 0%;
+        top: calc(100%-100px);
+    }
+
+    100%{
+        left: 0%;
+        top: 0%;
+    }
+}
+

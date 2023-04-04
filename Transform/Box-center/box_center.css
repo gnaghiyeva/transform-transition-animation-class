@@ -1,0 +1,25 @@
+.wrapper{
+    width: 700px;
+    margin: 40px auto;
+    height: 500px;
+    border: 2px solid black;
+
+  }
+
+  .wrapper [class|="box"]{
+    width: 100px;
+    height: 100px;
+}
+
+.box-1{
+    background-color: hotpink;
+
+    left: 50%;
+    top: 50%;
+    transition: 1s;
+   
+
+}
+
+
+

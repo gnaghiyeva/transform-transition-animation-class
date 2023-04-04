@@ -1,0 +1,17 @@
+
+  .transition{
+      width: 70%;
+      height: 600px;
+      border: 1px solid red;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .transition .box{
+      height: 80px;
+      width: 100px;
+      background-color: green;
+  }
+ 
+  

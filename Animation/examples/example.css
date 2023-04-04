@@ -1,0 +1,97 @@
+.wrapper {
+    width: 700px;
+    margin: 0px auto;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+  }
+  body {
+    height: 200vh;
+  }
+  .wrapper [class|="box"] {
+    width: 100px;
+    height: 100px;
+  }
+  .wrapper .heart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 70px;
+    animation-name: heartbeat;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+  }
+  .another-box {
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(100% - 50px);
+    left: 50%;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes rotate {
+    0% {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    25% {
+      transform: translateX(-50%) rotate(90deg);
+    }
+    50% {
+      transform: translateX(-50%) rotate(180deg);
+    }
+    75% {
+      transform: translateX(-50%) rotate(270deg);
+    }
+    100% {
+      transform: translateX(-50%) rotate(360deg);
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+  .box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: hotpink;
+    animation-name: movement;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+  }
+  .box-1:hover {
+    animation-play-state: paused;
+  }
+  @keyframes movement {
+    0% {
+      left: 0%;
+      top: 0%;
+    }
+    25% {
+      left: calc(100% - 100px);
+      top: 0%;
+    }
+    50% {
+      top: calc(100% - 100px);
+      left: calc(100% - 100px);
+    }
+    75% {
+      left: 0%;
+      top: calc(100% - 100px);
+    }
+    100% {
+      left: 0%;
+      top: 0%;
+    }
+  }
+
+  
